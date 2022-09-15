@@ -1,5 +1,13 @@
 version: "3"
 services:
+  reverseproxy:
+      image: reverseproxy
+      ports:
+          - 8080:8080
+      restart: always
+      depends_on:
+        - backend-user
+        - backend-feed
   backend-user:
     image: udagram-api-user
     environment:
@@ -26,4 +34,8 @@ services:
       AWS_BUCKET: 'tesr-7888585581-dev'
       JWT_SECRET: 'test'
       URL: "http://localhost:8100"
+  frontend:
+    image: udagram-frontend:local
+    ports:
+      - "8100:80"
   
