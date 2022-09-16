@@ -22,7 +22,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Docker build reverseproxy
       run: |
-        docker build ./reverseproxy --tag reverseproxy
+        docker build ./../reverseproxy --tag reverseproxy
     - name: Docker build udagram-api-user
       run: |
         docker build ./udagram-api-user --tag udagram-api-user
