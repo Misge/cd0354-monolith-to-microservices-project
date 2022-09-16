@@ -34,7 +34,7 @@ jobs:
         docker build ./udagram-frontend --tag udagram-frontend
     - name: docker push
       run: |
-        docker push reverseproxy
-        docker push udagram-api-user
-        docker push udagram-api-feed
-        docker push udagram-frontend
+        docker push misgana/reverseproxy:v1
+        docker push misgana/udagram-api-user:v1
+        docker push misgana/udagram-api-feed:v1
+        docker push misgana/udagram-frontend:v1
