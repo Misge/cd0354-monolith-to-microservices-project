@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  postgres_database: postgres
+  host: database-1.cpz8hh4xihsr.us-east-1.rds.amazonaws.com
+  dialect: postgres
+  aws_region: us-east-1
+  aws_profile: default
+  aws_media_bucket: tesr-7888585581-dev
+  url: af6cd5f8fbe784267a74be60b2104b55-368293021.us-east-1.elb.amazonaws.com
