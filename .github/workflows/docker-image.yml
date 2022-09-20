@@ -22,19 +22,19 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Docker build reverseproxy
       run: |
-        docker build ./udagram-reverseproxy --tag misgana/reverseproxy:v1
+        docker build ./udagram-reverseproxy --tag misgana/reverseproxy:v2
     - name: Docker build udagram-api-user
       run: |
-        docker build ./udagram-api-user --tag misgana/udagram-api-user:v1
+        docker build ./udagram-api-user --tag misgana/udagram-api-user:v2
     - name: Docker build udagram-api-feed
       run: |
-        docker build ./udagram-api-feed --tag misgana/udagram-api-feed:v1
+        docker build ./udagram-api-feed --tag misgana/udagram-api-feed:v2
     - name: Docker build udagram-frontend
       run: |
-        docker build ./udagram-frontend --tag misgana/udagram-frontend:v1
+        docker build ./udagram-frontend --tag misgana/udagram-frontend:v2
     - name: docker push
       run: |
-        docker push misgana/udagram-api-user:v1
-        docker push misgana/udagram-api-feed:v1
-        docker push misgana/udagram-frontend:v1
-        docker push misgana/reverseproxy:v1
+        docker push misgana/udagram-api-user:v2
+        docker push misgana/udagram-api-feed:v2
+        docker push misgana/udagram-frontend:v2
+        docker push misgana/reverseproxy:v2
