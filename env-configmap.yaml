@@ -9,4 +9,4 @@ data:
   aws_region: us-east-1
   aws_profile: default
   aws_media_bucket: tesr-7888585581-dev
-  url: af6cd5f8fbe784267a74be60b2104b55-368293021.us-east-1.elb.amazonaws.com
+  url: http://af6cd5f8fbe784267a74be60b2104b55-368293021.us-east-1.elb.amazonaws.com:8100
