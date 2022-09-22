@@ -20,7 +20,7 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}  
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-   - name: Docker build reverseproxy
+    - name: Docker build reverseproxy
       run: |
         docker build ./udagram-reverseproxy --tag misgana/reverseproxy:v5
     - name: Docker build udagram-api-user
