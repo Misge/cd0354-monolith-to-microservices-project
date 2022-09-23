@@ -1,7 +1,7 @@
 version: "3"
 services:
   reverseproxy:
-      image: reverseproxy:v5
+      image: reverseproxy:v8
       ports:
           - 8080:8080
       restart: always
@@ -9,7 +9,7 @@ services:
         - backend-user
         - backend-feed
   backend-user:
-    image: udagram-api-user:v5
+    image: udagram-api-user:v8
     environment:
       POSTGRES_USERNAME: 'postgres'
       POSTGRES_PASSWORD: 'postgres'
@@ -21,7 +21,7 @@ services:
       JWT_SECRET: 'test'
       URL: "http://localhost:8100"
   backend-feed:
-    image: udagram-api-feed:v5
+    image: udagram-api-feed:v8
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
@@ -35,7 +35,7 @@ services:
       JWT_SECRET: 'test'
       URL: "http://localhost:8100"
   frontend:
-    image: udagram-frontend:v5
+    image: udagram-frontend:v8
     ports:
       - "8100:80"
   

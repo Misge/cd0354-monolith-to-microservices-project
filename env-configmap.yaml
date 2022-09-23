@@ -8,5 +8,5 @@ data:
   dialect: postgres
   aws_region: us-east-1
   aws_profile: default
-  aws_media_bucket: tesr-7888585581-dev
+  aws_media_bucket: test-7888585581-bucket
   url: http://localhost:8080
