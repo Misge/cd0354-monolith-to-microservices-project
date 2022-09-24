@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: misgana/udagram-frontend:v8
+        image: misgana/udagram-frontend:v12
         ports:
         - containerPort: 80
         resources:
