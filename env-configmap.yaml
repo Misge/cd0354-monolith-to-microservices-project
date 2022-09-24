@@ -4,9 +4,9 @@ metadata:
   name: env-configmap
 data:
   postgres_database: postgres
-  host: database-1.cpz8hh4xihsr.us-east-1.rds.amazonaws.com
+  host: database-1.cmciqzl3ryej.us-east-1.rds.amazonaws.com
   dialect: postgres
   aws_region: us-east-1
   aws_profile: default
   aws_media_bucket: test-7888585581-bucket
-  url: a44bfbece1cdd4166ae64be86ca6d1a8-1585879322.us-east-1.elb.amazonaws.com
+  url: a6a6458a86d9746f1b147c0efc5bf16b-931017072.us-east-1.elb.amazonaws.com
