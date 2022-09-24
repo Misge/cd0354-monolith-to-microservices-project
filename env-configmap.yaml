@@ -9,4 +9,4 @@ data:
   aws_region: us-east-1
   aws_profile: default
   aws_media_bucket: test-7888585581-bucket
-  url: http://localhost:8080
+  url: a44bfbece1cdd4166ae64be86ca6d1a8-1585879322.us-east-1.elb.amazonaws.com
