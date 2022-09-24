@@ -22,7 +22,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Docker build udagram-frontend
       run: |
-        docker build ./udagram-frontend --tag misgana/udagram-frontend:v8
+        docker build ./udagram-frontend --tag misgana/udagram-frontend:v12
     - name: docker push
       run: |
-        docker push misgana/udagram-frontend:v8
+        docker push misgana/udagram-frontend:v12
