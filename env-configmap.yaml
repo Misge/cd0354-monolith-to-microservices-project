@@ -9,4 +9,4 @@ data:
   aws_region: us-east-1
   aws_profile: default
   aws_media_bucket: test-7888585581-bucket
-  url: a6a6458a86d9746f1b147c0efc5bf16b-931017072.us-east-1.elb.amazonaws.com
+  url: aadd7fc6c8942443c9a2dec44c12883f-408243565.us-east-1.elb.amazonaws.com
