@@ -149,8 +149,7 @@ Then, push your changes to the Github repo. Travis will automatically build and 
 Next, re-apply configmap and re-deploy to the k8s cluster.
 ```bash
 kubectl apply -f env-configmap.yaml
-# Rolling update "frontend" containers of "frontend" deployment, updating the image
-kubectl set image deployment frontend frontend=sudkul/udagram-frontend:v3
+# Rolling update "frontend" containers of "frontend" deployment, updating the i
 # Do the same for other three deployments
 ```
 Check your deployed application at the External IP of your *publicfrontend* service. 
@@ -173,7 +172,7 @@ In case of `ImagePullBackOff` or `ErrImagePull` or `CrashLoopBackOff`, review yo
 ```bash
 kubectl get pods
 # Assuming "backend-feed-68d5c9fdd6-dkg8c" is a pod
-kubectl exec --stdin --tty backend-feed-68d5c9fdd6-dkg8c -- /bin/bash
+kubectl exec --stdin --tty backend-feed-5cc5bbfcb4-gbfpg-- /bin/bash
 # See what values are set for environment variables in the container
 printenv | grep POST
 # Or, you can try "curl <cluster-IP-of-backend>:8080/api/v0/feed " to check if services are running.
