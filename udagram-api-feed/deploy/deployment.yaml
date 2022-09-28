@@ -17,6 +17,8 @@ spec:
       containers:
       - image: misgana/udagram-api-feed:v8
         name: backend-feed
+        ports:
+          - containerPort: 8080
         imagePullPolicy: Always                
         env:
         - name: URL

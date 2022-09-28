@@ -1,6 +1,6 @@
 version: "3"
 services:
-  frontend:
+  backend-user:
     build:
-      context: ./udagram-frontend
-    image: udagram-frontend:v8
+      context: ./udagram-api-user
+    image: udagram-api-user:v8
